@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #025d6d;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav ul li {
+            display: inline;
+        }
+
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background 0.3s ease;
+        }
+
+        .nav ul li a:hover {
+            background: #575757;
+            border-radius: 5px;
+        }
+
+        .home {
+            background: url('./Tehri-Garhwal.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 150px 0;
+        }
+
+        .home h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .home p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .home .btn {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .home .btn:hover {
+            background: #575757;
+        }
+
+        .section {
+            padding: 50px 20px;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .about .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .about img {
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            list-style: none;
+            max-width: 1000px;
+            margin: auto;
+            padding: 0;
+        }
+
+        .skills ul li {
+            background: #fff;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects .project-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .projects .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+        }
+
+        .projects .card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .projects .card h3 {
+            margin-bottom: 10px;
+        }
+
+        #resume {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .resume .btn {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s ease;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .resume .btn:hover {
+            background: #575757;
+        }
+
+        #contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url('./kunjapuri.jpg') no-repeat center center/cover;
+        }
+
+        .contact p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        #email {
+            padding: 20px 30px;
+            border-color: #025d6d;
+            border-radius: 20px;
+        }
+
+        .contact .btn {
+            padding: 20px 30px;
+            border-color: #025d6d;
+            border-radius: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Tanisha Rawat</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am Tanisha, from the magical hills of Tehri, Garhwal!</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section id="about" class="section about">
+        <h2 class="section-heading">About Me</h2>
+        <div class="content">
+            <img src="./queen-of-tehri.jpg" alt="Your Photo">
+            <p>Hi! I'm Tanisha, a passionate web developer with experience in creating dynamic and responsive websites. My expertise includes HTML, CSS, JavaScript, and various modern frameworks and libraries. I love to transform ideas into reality using code.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <h2 class="section-heading">Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2 class="section-heading">Projects</h2>
+        <div class="project-cards">
+            <div class="card">
+                <img src="./todo-list.png" alt="Project 1">
+                <h3>Todo List App</h3>
+                <p>Todo List app is a user-friendly application designed to help you organize and manage your daily tasks efficiently. The app provides a straightforward interface where users can easily add, view, edit, and delete tasks. </p>
+            </div>
+            <div class="card">
+                <img src="./landing-page.png" alt="Project 2">
+                <h3>Landing Page</h3>
+                <p>Landing page is a single web page designed to capture visitor attention and encourage them to take a specific action, such as signing up for a newsletter, downloading a resource, or making a purchase.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section resume">
+        <h2 class="section-heading">Resume</h2>
+        <a href="./cv-template.pdf" class="btn" download>Download Resume</a>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2 class="section-heading">Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email or phone.</p>
+        <form action="https://www.freecodecamp.com/email-submit" method="POST">
+            <input type="email" name="email" id="email" placeholder="Your Email Address" required>
+            <input type="submit" class="btn" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2024 Tanisha Rawat. All rights reserved.
+    </footer>
+</body>
+</html>
